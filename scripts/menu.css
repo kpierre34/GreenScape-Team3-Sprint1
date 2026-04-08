@@ -36,7 +36,7 @@
 /* --- Right Side: Navigation Links (Desktop) --- */
 .nav-links {
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content:center ; /* Align links to the right */
     align-items: center;
 }
 
