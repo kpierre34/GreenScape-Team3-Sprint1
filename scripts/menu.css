@@ -17,7 +17,7 @@
 .navbar {
     display: flex;
     /* Main Flexbox setting: Icon (left) and Links (right) */
-    justify-content: space-between; 
+    justify-content: space-between,; 
     align-items: center;
     padding: 0 20px;
     max-width: 1200px;
@@ -36,8 +36,8 @@
 /* --- Right Side: Navigation Links (Desktop) --- */
 .nav-links {
     display: flex;
-    justify-content:center ; /* Align links to the right */
-    align-items: center;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: right; /* Align links to the right */
 }
 
 .nav-links > li {
