@@ -2,7 +2,7 @@
 Measurements:
     px:     Pixels
     rem:    Relative to the root element
-    hw:     Relative to the viewport width
+    vw:     Relative to the viewport width
     vh:     Relative to the viewport height
    --------------------    
     clamp(min, val, max):   Set your 'val' as your main measurement,
@@ -29,13 +29,12 @@ body{
     /* Background */
     background-image: linear-gradient(155deg, #DFE9CB 70%, #f3ffdc); /* Applies two colors smoothly transitioning*/
     background-attachment: fixed;
-    
 }
 
 /* ========
 Containers
 ======== */
-#containerIntro{
+.containerIntro{
     /* Background */
     background-color: #e7ebdf;
     border: solid, 0.2rem;
@@ -57,14 +56,11 @@ Containers
 /* ========
 Footer
 ======== */
-#ftrMainP{
+#ftrMain{
     /* Background */
     background-color: #e7ebdf;
-    /* Spacing */
-    margin: 1rem;
-    gap: 5rem;
-}
-#ftrExplore{
+    position: fixed;
+    bottom: 0;
     /* Spacing */
     margin: 1rem;
     gap: 5rem;
@@ -81,7 +77,7 @@ Elements
     margin: 1rem;
     gap: 5rem;
 }
-#greenStarSubTitle{
+.greenStarSubTitle{
     /* Background */
     /* Spacing */
     margin: 1rem;
