@@ -1,8 +1,79 @@
-body{
-    background-color: #CCCCCC;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 14pt;
+/* ========== NOTE ==========
+Measurements:
+    px:     Pixels
+    rem:    Relative to the root element
+    hw:     Relative to the viewport width
+    vh:     Relative to the viewport height
+   --------------------    
+    clamp(min, val, max):   Set your 'val' as your main measurement,
+                            and clamp will scale the value between 
+                            your 'min' and 'max'.
+   --------------------
+Owen: I recommend using rem for font and spacing, and hw/vh for sizing elements.
+========================== */
+
+*{ /* Default Settings - applies to all elements listed in document */
+    -webkit-user-drag: none; /* default dragging - rest applies to various browsers*/
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    /* Highlight */
+    user-select: none; /* default selection - rest applies to various browsers*/
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -webkit-user-select: none;
 }
+
+body{
+    /* Background */
+    background-image: linear-gradient(155deg, #DFE9CB 70%, #f3ffdc); /* Applies two colors smoothly transitioning*/
+    background-attachment: fixed;
+    
+}
+
+/* ========
+Containers
+======== */
+#containerIntro{
+    /* Background */
+    background-color: #e7ebdf;
+    border: solid, 0.2rem;
+    border-radius: 1rem;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+    /* Sizing */
+    height: 2px;
+    width: 1px;;
+}
+
+#containerAbout{
+    /* Background */
+    height: clamp(8vh, 10vh, 5vh);
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+
+/* ========
+Footer
+======== */
+#ftrMainP{
+    /* Background */
+    background-color: #e7ebdf;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+
 #logo{
     height: 50px;
+}
+
+.imgSet1{
+    height: clamp(10vh, 15vh, 20vh);
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
 }
