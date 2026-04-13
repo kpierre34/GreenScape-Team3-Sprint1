@@ -47,7 +47,6 @@ Containers
     height: 2px;
     width: 1px;;
 }
-
 #containerAbout{
     /* Background */
     height: clamp(8vh, 10vh, 5vh);
@@ -55,7 +54,6 @@ Containers
     margin: 1rem;
     gap: 5rem;
 }
-
 /* ========
 Footer
 ======== */
@@ -66,9 +64,28 @@ Footer
     margin: 1rem;
     gap: 5rem;
 }
-
+#ftrExplore{
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+/* ========
+Elements
+======== */
 #logo{
     height: 50px;
+}
+.greenStarTitle{
+    /* Background */
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+#greenStarSubTitle{
+    /* Background */
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
 }
 
 .imgSet1{
@@ -77,3 +94,7 @@ Footer
     margin: 1rem;
     gap: 5rem;
 }
+
+/* ========
+Media
+======== */
