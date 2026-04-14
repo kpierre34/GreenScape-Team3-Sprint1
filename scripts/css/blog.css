@@ -18,6 +18,7 @@
 .card-header {
     position: relative;
     height: 250px;
+    width:250px;
 }
 
 .card-header img {
