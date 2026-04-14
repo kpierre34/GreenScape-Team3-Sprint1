@@ -1,3 +1,35 @@
+*{ /* Default Settings - applies to all elements listed in document */
+    -webkit-user-drag: none; /* default dragging - rest applies to various browsers*/
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    /* Highlight */
+    user-select: none; /* default selection - rest applies to various browsers*/
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -webkit-user-select: none;
+}
+body{
+    /* Background */
+    background-image: linear-gradient(155deg, #DFE9CB 70%, #c0c9b0); /* Applies two colors smoothly transitioning*/
+    background-attachment: fixed;
+    
+}
+/* ========
+Fonts
+======== */
+.font1{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font1Bold{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 /* ========
 Containers
 ======== */
@@ -9,12 +41,39 @@ Containers
     justify-content: space-between;;
     gap: 2rem;
     /* Text */
-    color: #494841;
+    color: #62903A;
 }
 #containerAbout{
     /* Alignment */
     margin: 1rem;
     gap: 5rem;
+}
+
+#mainIntroGroup{
+    /* Background */
+    background: #d7ff96;
+    border: solid 0.23rem #1e472f;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: /* Creates a sharp shadow, then layers */
+        0 0.5rem 1rem rgba(0, 0, 0, 0.1),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.05);
+    /* alignment */
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    /* sizing */
+    width: clamp(30vw, 50vw, 60vw);
+    /* Animation */
+    transition: background-color 0.3s ease;
+}
+#mainIntroGroup:hover{
+    /* Background */
+    background-color: #c0e86a;
+    /* Animation */
+    transition: background-color 0.3s ease;
 }
 /* ========
 Footer
@@ -31,25 +90,14 @@ Footer
 /* ========
 Elements
 ======== */
-.titleGroup {
-    /* Background */
-    background: #fbffed;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    /* alignment */
-    margin-left: 2rem;
-    gap: 1rem;
-    /* sizing */
-    width: clamp(30vw, 50vw, 60vw);
-}
-
 .mainIntroTitle{
+    /* Background */
+
     /* Alignment */
     margin-left: 2rem;
-    /* Sizing */
-    width: clamp(10vw, 15vw, 20vw);
-
+    /* Text */
+    color: #62903A;
+    font-size: clamp(2rem, 3vw, 4rem);
 }
 .mainIntroSubTitle{
     /* Sizing */
@@ -67,14 +115,26 @@ Elements
     margin-top: 0;
     margin: 2rem;
 }
-#contactInfo {
-    /* Alignment */
-    margin-top: 1rem;
+
+#logo{
+    height: 50px;
 }
 
 /* Image sets */
-#mainImg1{
+.mainImgUnderline{
     /* Background */
+     background-color: transparent;
+     aspect-ratio: 276 / 180;
+     /* Alignment */
+     margin-top: -2rem;
+     margin-left: 2rem;
+     /* Sizing */
+     width: clamp(1vw, 5vw, 40vw);
+}
+.mainImg1{
+    /* Background */
+    border: 0 solid transparent;
+    border-radius: 1rem;
     box-shadow: /* Creates a sharp shadow, then layers */
         0 0.5rem 1rem rgba(0, 0, 0, 0.25),
         0 1.5rem 3rem rgba(0, 0, 0, 0.2);
