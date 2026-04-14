@@ -1,0 +1,102 @@
+/* ========
+Containers
+======== */
+#containerIntro{
+    /* Background */
+    display: flex;
+    /* Alignment */
+    align-items: flex-start;
+    justify-content: space-between;;
+    gap: 2rem;
+    /* Text */
+    color: #494841;
+}
+#containerAbout{
+    /* Alignment */
+    margin: 1rem;
+    gap: 5rem;
+}
+/* ========
+Footer
+======== */
+#ftr{
+    /* Background */
+    background-color: #e7ebdf;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+    position: relative;
+    bottom: 0;
+}
+/* ========
+Elements
+======== */
+.titleGroup {
+    /* Background */
+    background: #fbffed;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* alignment */
+    margin-left: 2rem;
+    gap: 1rem;
+    /* sizing */
+    width: clamp(30vw, 50vw, 60vw);
+}
+
+.mainIntroTitle{
+    /* Alignment */
+    margin-left: 2rem;
+    /* Sizing */
+    width: clamp(10vw, 15vw, 20vw);
+
+}
+.mainIntroSubTitle{
+    /* Sizing */
+    width: auto;
+    height: auto;
+    /* Text */
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.introText {
+    /* Background */
+    display: flex;
+    /* Alignment */
+    flex-direction: column;
+    margin-top: 0;
+    margin: 2rem;
+}
+#contactInfo {
+    /* Alignment */
+    margin-top: 1rem;
+}
+
+/* Image sets */
+#mainImg1{
+    /* Background */
+    box-shadow: /* Creates a sharp shadow, then layers */
+        0 0.5rem 1rem rgba(0, 0, 0, 0.25),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1024 / 1024;
+    /* Alignment */
+    margin: 2rem;
+    gap: 2rem;
+    /* Sizing */
+    width: clamp(25vw, 35vw, 40vw);
+    /* transition - when animation ends, transforms slowly back to place */
+    transition: width 0.6s ease,transform 0.6s ease, box-shadow 0.6s ease;
+}
+#mainImg1:hover{
+    /* Background */
+    box-shadow: 
+        0 1rem 2rem rgba(0, 0, 0, 0.3),
+        0 2.5rem 5rem rgba(0, 0, 0, 0.25);
+    /* Animation */
+    transform: scale(1.02);
+    transition: transform 1s ease;
+}
+
+/* ========
+Media
+======== */
