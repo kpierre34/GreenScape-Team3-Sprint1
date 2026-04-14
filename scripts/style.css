@@ -1,0 +1,160 @@
+/* ========== NOTE ==========
+Measurements:
+    px:     Pixels
+    rem:    Relative to the root element
+    hw:     Relative to the viewport width
+    vh:     Relative to the viewport height
+   --------------------    
+    clamp(min, val, max):   Set your 'val' as your main measurement,
+                            and clamp will scale the value between 
+                            your 'min' and 'max'.
+   --------------------
+Owen: I recommend using rem for font and spacing, and hw/vh for sizing elements.
+========================== */
+
+*{ /* Default Settings - applies to all elements listed in document */
+    -webkit-user-drag: none; /* default dragging - rest applies to various browsers*/
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    /* Highlight */
+    user-select: none; /* default selection - rest applies to various browsers*/
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -webkit-user-select: none;
+}
+
+body{
+    /* Background */
+    background-image: linear-gradient(155deg, #DFE9CB 70%, #f3ffdc); /* Applies two colors smoothly transitioning*/
+    background-attachment: fixed;
+    
+}
+
+/* ========
+Containers
+======== */
+#containerIntro{
+    /* Background */
+    background-color: #e7ebdf;
+    border: solid, 0.2rem;
+    border-radius: 1rem;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+    /* Sizing */
+    height: 2px;
+    width: 1px;;
+}
+#containerAbout{
+    /* Background */
+    height: clamp(8vh, 10vh, 5vh);
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+/* ========
+Footer
+======== */
+#ftrMainP{
+    /* Background */
+    background-color: #e7ebdf;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+#ftrExplore{
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+/* ========
+Elements
+======== */
+#logo{
+    height: 50px;
+}
+.greenStarTitle{
+    /* Background */
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+#greenStarSubTitle{
+    /* Background */
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+
+.imgSet1{
+    height: clamp(10vh, 15vh, 20vh);
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.blog-card {
+    background: white;
+    width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    position: relative;
+    height: 250px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4); /* Darkens image slightly for text readability */
+    padding: 20px;
+}
+
+.image-overlay h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.post-date {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========
+Media
+======== */
