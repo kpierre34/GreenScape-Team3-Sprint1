@@ -13,6 +13,14 @@ a{
     font-style: normal;
 }
 
+#request{
+    background-color: #5fd87fab;
+    border: solid 0.2rem #c2ffd2ab;
+    border-radius: 0.5rem;
+    /* Alignment */
+    margin-left: 50px;
+}
+
 .text-container {
     text-align: center;
     padding: 50px 20px;
