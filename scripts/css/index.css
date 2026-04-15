@@ -12,7 +12,7 @@
 }
 body{
     /* Background */
-    background-image: linear-gradient(155deg, #DFE9CB 70%, #c0c9b0); /* Applies two colors smoothly transitioning*/
+    background-image: linear-gradient(155deg, #cbd3a6 70%, #8e916b); /* Applies two colors smoothly transitioning*/
     background-attachment: fixed;
     
 }
@@ -234,10 +234,6 @@ Elements
 }
 
 /* Image sets */
-#logo{
-    height: 50px;
-}
-
 .mainIntroCardImg1 {
     /* Background */
     border: 0 solid transparent;

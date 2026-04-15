@@ -7,20 +7,21 @@
     text-decoration: none;
 }
 
-.topbar {
-    background-color: #00e1ff;
-    height: 20px;
+a{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
 .text-container {
     text-align: center;
     padding: 50px 20px;
     color: #1f5030;
-    font-family: Arial, sans-serif;
 }
 
 /* --- Navigation Container --- */
 .navbar-container {
-    background-color: #104249;
+    background-color: #DFE9CB;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,14 +32,17 @@
     align-items: center;
     padding: 0 20px;
     max-width: 1200px;
+    max-height: 120px;
     margin: 0 auto; /* Center the navbar content */
+}
+
+#logo{
+    height: 200px;
 }
 
 /* --- Left Side: Brand/Icon --- */
 .navbar-brand a {
     color: #1f5030; /* Gold color for the brand name */
-    font-size: 1.5em;
-    font-weight: bold;
     padding: 15px 0;
     display: block;
 }
@@ -57,8 +61,8 @@
 .nav-links a {
     display: block;
     padding: 15px 20px;
-    color: white;
-    transition: background-color 0.3s;
+    color: #235C32;
+    transition: background-color 0.3s;;
 }
 
 .nav-links a:hover {
