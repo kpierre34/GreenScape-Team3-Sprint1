@@ -17,20 +17,6 @@ body{
     
 }
 /* ========
-Fonts
-======== */
-.font1{
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font1Bold{
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-/* ========
 Containers
 ======== */
 #containerIntro{
@@ -43,13 +29,8 @@ Containers
     /* Text */
     color: #62903A;
 }
-#containerAbout{
-    /* Alignment */
-    margin: 1rem;
-    gap: 5rem;
-}
 
-#mainIntroGroup{
+#mainIntroGroup1{
     /* Background */
     background: #d7ff96;
     border: solid 0.23rem #1e472f;
@@ -69,12 +50,106 @@ Containers
     /* Animation */
     transition: background-color 0.3s ease;
 }
-#mainIntroGroup:hover{
+#mainIntroGroup1:hover{
     /* Background */
     background-color: #c0e86a;
     /* Animation */
     transition: background-color 0.3s ease;
 }
+
+#mainIntroGroup2{
+    /* Background */
+    display: flex;
+    flex-direction: row;
+    /* Alignment */
+    margin: 2rem 1rem 1rem 2rem;
+    gap: 2rem;
+    justify-content: flex-start;
+    text-align: center;
+}
+.mainIntroCards{
+    /* Background */
+    background-color: #e8ffe9;
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    /* Alignment */
+    padding: 1rem;
+    /* Text */
+    font-size: clamp(0.8rem, 1rem, 1.2rem);
+    /* Animation */
+    transition: transform 0.6s ease, background-color 0.9s ease, box-shadow 0.6s ease, color 0.6s ease;
+}
+.mainIntroCards:hover{
+    /* Background */
+    background-color: #b4d6b6;
+    box-shadow: /* Creates a sharp shadow, then layers */
+        0 0.5rem 1rem rgba(0, 0, 0, 0.25),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    /* text */
+    color: #153322;
+    /* Animation */
+    transform: scale(1.04);
+    transition: transform 0.3s ease, background-color 0.6s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#mainIntroImg{
+    /* Background */
+    background-image: url("/img/introimage.jpg");
+    border: 0 solid transparent;
+    border-radius: 1rem;
+    box-shadow: /* Creates a sharp shadow, then layers */
+        0 0.5rem 1rem rgba(0, 0, 0, 0.25),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1024 / 1024;
+    /* Alignment */
+    margin: 2rem;
+    gap: 2rem;
+    position: relative;
+    /* Sizing */
+    width: clamp(25vw, 35vw, 40vw);
+    /* Text */
+    color:#c0c9b0;
+    /* transition - when animation ends, transforms slowly back to place */
+    transition: width 0.6s ease,transform 0.6s ease, box-shadow 0.6s ease;
+}
+#mainIntroImg:hover{
+    /* Background */
+    box-shadow: 
+        0 1rem 2rem rgba(0, 0, 0, 0.3),
+        0 2.5rem 5rem rgba(0, 0, 0, 0.25);
+    /* Animation */
+    transform: scale(1.02);
+    transition: transform 1s ease;
+}
+.mainIntroImgNav{
+    /* Background */
+    background-color: #000000bb;
+    border: 0 solid transparent;
+    border-radius: 0.4rem;
+    display: flex;
+    /* sizing */
+    width: 80%;
+    /* Alignment */
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    justify-self: center;
+    justify-content: center;
+    /* Text */
+    color: #c0c9b0;
+    /* Animation */
+    transition: transform 0.6s ease, color 0.2s ease;
+}
+.mainIntroImgNav:hover{
+    /* Text */
+    color: #e8ffe9;
+    /* Animation */
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.2s ease;
+}
+
 /* ========
 Footer
 ======== */
@@ -92,19 +167,40 @@ Elements
 ======== */
 .mainIntroTitle{
     /* Background */
-
+    border-bottom: solid 0.2rem #7fc99e;
+    border-radius: 0.2rem;
+    /* Sizing */
+    width:fit-content;
     /* Alignment */
     margin-left: 2rem;
     /* Text */
     color: #62903A;
     font-size: clamp(2rem, 3vw, 4rem);
+    /* Animation */
+    transition: border-color 0.6s ease, color 0.6s ease;
 }
+.mainIntroTitle:hover{
+    /* Background */
+    border-color: #588a6d;
+    /* Text */
+    color: #456429;
+    /* Animation */
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
 .mainIntroSubTitle{
     /* Sizing */
     width: auto;
     height: auto;
     /* Text */
     font-size: clamp(1.5rem, 2vw, 3rem);
+    transition: color 0.6s ease;
+}
+.mainIntroSubTitle:hover{
+    /* Text */
+    color: #456429;
+    /* Animation */
+    transition: color 0.3s ease;
 }
 
 .introText {
@@ -116,47 +212,75 @@ Elements
     margin: 2rem;
 }
 
+.cardSplit{
+    /* Background */
+    border-bottom: solid 0.2rem #7fc99e;
+    border-radius: 0.2rem;
+    /* Sizing */
+    width: 80%;
+    /* Alignment */
+    margin: 0 auto;
+    text-align: center;
+    /* Animation */
+    transition: border-color 0.6s ease, color 0.6s ease;
+}
+.cardSplit:hover{
+    /* Background */
+    border-color: #ccffe1;
+    /* Text */
+    color: #eaffd8;
+    /* Animation */
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Image sets */
 #logo{
     height: 50px;
 }
 
-/* Image sets */
-.mainImgUnderline{
-    /* Background */
-     background-color: transparent;
-     aspect-ratio: 276 / 180;
-     /* Alignment */
-     margin-top: -2rem;
-     margin-left: 2rem;
-     /* Sizing */
-     width: clamp(1vw, 5vw, 40vw);
-}
-.mainImg1{
+.mainIntroCardImg1 {
     /* Background */
     border: 0 solid transparent;
     border-radius: 1rem;
     box-shadow: /* Creates a sharp shadow, then layers */
-        0 0.5rem 1rem rgba(0, 0, 0, 0.25),
-        0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-    aspect-ratio: 1024 / 1024;
+        0 0.5rem 1rem rgba(0, 0, 0, 0.2),
+        0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
     /* Alignment */
-    margin: 2rem;
+    margin-top: 1rem;
     gap: 2rem;
     /* Sizing */
-    width: clamp(25vw, 35vw, 40vw);
+    width: clamp(5vw, 10vw, 15vw);
+    aspect-ratio: 1 / 1;
     /* transition - when animation ends, transforms slowly back to place */
-    transition: width 0.6s ease,transform 0.6s ease, box-shadow 0.6s ease;
+    transition: transform 0.6s ease, border-radius 0.4s ease, box-shadow 0.6s ease;
 }
-#mainImg1:hover{
+.mainIntroCardImg1:hover{
     /* Background */
     box-shadow: 
-        0 1rem 2rem rgba(0, 0, 0, 0.3),
-        0 2.5rem 5rem rgba(0, 0, 0, 0.25);
+        0 1rem 2rem rgba(0, 0, 0, 0.5),
+        0 2.5rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
     /* Animation */
-    transform: scale(1.02);
-    transition: transform 1s ease;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
 }
-
 /* ========
 Media
 ======== */
+
+/* ========
+Text
+======== */
+.font1{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font1Bold{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
