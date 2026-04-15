@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+.topbar {
+    background-color: #00e1ff;
+    height: 20px;
+}
 .text-container {
     text-align: center;
     padding: 50px 20px;

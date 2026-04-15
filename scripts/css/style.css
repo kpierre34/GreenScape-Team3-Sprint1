@@ -2,8 +2,9 @@
 Measurements:
     px:     Pixels
     rem:    Relative to the root element
-    hw:     Relative to the viewport width
+    vw:     Relative to the viewport width
     vh:     Relative to the viewport height
+    %:      Relative to the parent element
    --------------------    
     clamp(min, val, max):   Set your 'val' as your main measurement,
                             and clamp will scale the value between 
@@ -11,6 +12,7 @@ Measurements:
    --------------------
 Owen: I recommend using rem for font and spacing, and hw/vh for sizing elements.
 ========================== */
+
 
 *{ /* Default Settings - applies to all elements listed in document */
     -webkit-user-drag: none; /* default dragging - rest applies to various browsers*/
@@ -156,5 +158,16 @@ Elements
 }
 
 /* ========
-Media
+Fonts
 ======== */
+.font1{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font1Bold{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
