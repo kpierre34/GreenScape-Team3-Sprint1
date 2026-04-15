@@ -1,0 +1,125 @@
+.contact-us {
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.contact-us-text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 40px;
+    padding-top: 25px;
+}
+p {
+    padding: 20px 30px 60px 30px;
+}
+#request-text {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+}
+#name-text {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding-right: 280px;
+}
+#email-text {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding-right: 280px;
+    padding-top: 7px;
+}
+#number-text {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding-right: 225px;
+    padding-top: 7px;
+}
+#request {
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
+    margin-top: -203px;
+    margin-left: 40px;
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+#name {
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
+    height: 40px;
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#email {
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
+    height: 40px;
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#number {
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
+    height: 40px;
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+.terms-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-left: 60px;
+}
+.terms-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.terms-container a {
+  color: #000000;
+  text-decoration: underline;
+}
+.button-container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button-send {
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    border-width: 0px;
+    background-color: #277000;
+    color: white;
+    font-weight: 750;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+

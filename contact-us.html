@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact page</title>
+    <title>Home page</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./scripts/css/menu.css">
-    <link rel="stylesheet" href="./scripts/css/style.css">
-    <link rel="stylesheet" href="./scripts/css/contact-us.css">
+    <link rel="stylesheet" href="./scripts/css/index.css">
+    <link rel="stylesheet" href = "scripts/css/contact-us.css">
 </head>
-<body>
+<body">
+    <!-- Navigation Bar -->
     <header class="navbar-container">
-        <nav class="navbar">
-            
+        <nav class="navbar"> 
             <div class="navbar-brand">
-                <a href="#home"><img id="logo" src="img/logo.png"></a> 
+                <a href="index.html"><img id="logo" src="img/logo.png"></a> 
                 </div>
 
             <input type="checkbox" id="menu-toggle">
@@ -30,9 +31,9 @@
                 <li class="dropdown" id="csharp-dropdown">
                     <a href="services.html">Services</a>
                     <ul class="submenu">
-                        <li><a href="#csharp-console">Console Apps</a></li>
-                        <li><a href="#csharp-desktop">Desktop Apps</a></li>
-                        <li><a href="#csharp-web">Web Apps</a></li>
+                        <li><a href="#csharp-console">Lawn Care</a></li>
+                        <li><a href="#csharp-desktop">Aeration and Seeding</a></li>
+                        <li><a href="#csharp-web">Treatments</a></li>
                     </ul>
                 </li>
                 
@@ -41,24 +42,41 @@
 
                 <li class="dropdown" id="javascript-dropdown">
                     <a href="contact-us.html">Contact Us</a>
-                    <ul class="submenu">
-                        <li><a href="#js-frontend">Front End</a></li>
-                        <li><a href="#js-backend">Back End</a></li>
-                    </ul>
                 </li>
             </ul>
         </nav>
     </header>
-<br>
-<br>
-<br>
-<br>
-<a href="index.html"><h1 style="text-align: center;">Contact Us Here!</h1></a>
 
+    <div class = "contact-us">
+        <h1 class = "contact-us-text"> Contact Us Today </h1>
+        <p class = "contact-us-text"> For exceptional lawn care and personalized service, contact us today. We're here to help you achieve a beautiful, healthy lawn. Reach out now to discuss your lawn care needs! </p>
+        <h4 id = "request-text"> Tell us about your request </h4>
+        <h4 id = "name-text"> Your Name </h4>
+        <textarea id = "name"></textarea>
+        <h4 id = "email-text"> Your Email </h4>
+        <textarea id = "email"></textarea>
+        <h4 id = "number-text"> Your Phone Number</h4>
+        <textarea id = "number"></textarea>
+        <textarea id = "request"></textarea> <br>
+            
+        <div class="terms-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+                I agree with the <a href="https://www.ueni.com/en-us/terms?_ga=2.64152620.2083848354.1776089096-769583446.1776089096">Terms & Conditions</a> and the 
+                <a href="https://www.ueni.com/en-us/privacy?_ga=2.64152620.2083848354.1776089096-769583446.1776089096">Privacy & Cookies Policy</a> of UENI and any applicable 
+                Terms and Conditions of Green Star, LLC. This site is protected by 
+                reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and 
+                <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+            </label>
+        </div> <br><br>
 
+        <div class = "button-container">
+            <button type="button" id = "button-send"> Send Message </button>
+        </div>
 
+    </div>
 
-
+    <!-- JavaScript -->
     <script src="./scripts/js/script.js"></script>
 </body>
 </html>
