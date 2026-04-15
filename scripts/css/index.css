@@ -159,13 +159,57 @@ Footer
 ======== */
 #ftr{
     /* Background */
-    background-color: #e7ebdf;
+    background-color: #a7e459;
+    border-style: solid;
+    border-width: 0.4rem;
+    border-radius: 0.3rem;
+    border-color: #032e15;
     /* Spacing */
     margin: 1rem;
     gap: 5rem;
     position: relative;
     bottom: 0;
 }
+
+table {
+    /* Alignment */
+    width: 100%;
+    text-align: left;
+    /* Text */
+    color: #032e15;
+}
+.bnt{
+    /* Background */
+    background-color: #1f5030;
+    border: none;
+    border-radius: 0.2rem;
+    /* Text */
+    color: #c0e86a;
+    font-size: 1rem;
+    font-weight: bold;
+    /* Spacing */
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn1:hover{
+    /* Background */
+    background-color: #7fc99e;
+    /* Text */
+    color: #1f5030;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn2:hover{
+    /* Background */
+    background-color: #7fc99e;
+    /* Text */
+    color: #1f5030;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* ========
 Elements
 ======== */
