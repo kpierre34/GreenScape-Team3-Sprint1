@@ -7,14 +7,39 @@
     <link rel="stylesheet" href="./scripts/css/menu.css">
     <link rel="stylesheet" href="./scripts/css/style.css">
     <link rel="stylesheet" href="./scripts/css/team.css">
+    <style>
+        /* Stylizing the team list */
+        ol {
+            list-style-position: inside;
+            text-align: center;
+            padding: 0;
+            margin-top: 50px;
+        }
+
+        ol li {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 3rem;
+            font-weight: 750;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+            color: #333;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Subtle hover effect */
+        ol li:hover {
+            color: #007bff; /* Or your brand color */
+            transition: 0.7s ease;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar-container">
         <nav class="navbar">
-            
             <div class="navbar-brand">
                 <a href="index.html"><img id="logo" src="img/logo.png"></a> 
-                </div>
+            </div>
 
             <input type="checkbox" id="menu-toggle">
             
@@ -26,7 +51,6 @@
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                
                 <li class="dropdown" id="csharp-dropdown">
                     <a href="services.html">Services</a>
                     <ul class="submenu">
@@ -35,10 +59,8 @@
                         <li><a href="#csharp-web">Web Apps</a></li>
                     </ul>
                 </li>
-                
                 <li><a href="team.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li>
-
                 <li class="dropdown" id="javascript-dropdown">
                     <a href="contact-us.html">Contact Us</a>
                     <ul class="submenu">
@@ -56,13 +78,7 @@
         <li> Khamani </li>
         <li>michael</li>   
         <li>Elijah</li>
-
-
     </ol>
-
-
-
-
 
     <script src="./scripts/js/script.js"></script>
 </body>
