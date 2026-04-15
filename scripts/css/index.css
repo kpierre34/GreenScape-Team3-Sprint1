@@ -72,7 +72,10 @@ Containers
     background-color: #e8ffe9;
     border: solid 0.1rem;
     border-radius: 1rem;
+    /* Sizing */
+    max-width: 15rem;
     /* Alignment */
+    margin: 0 auto;
     padding: 1rem;
     /* Text */
     font-size: clamp(0.8rem, 1rem, 1.2rem);
@@ -103,6 +106,7 @@ Containers
     aspect-ratio: 1024 / 1024;
     /* Alignment */
     margin: 2rem;
+    margin-right: 4rem;
     gap: 2rem;
     position: relative;
     /* Sizing */
@@ -203,6 +207,17 @@ Elements
     transition: color 0.3s ease;
 }
 
+#mainIntroDesc{
+    /* Animation */
+    transition: color 0.6s ease;
+}
+#mainIntroDesc:hover{
+    /* Text */
+    color: #456429;
+    /* Animation */
+    transition: color 0.3s ease;
+}
+
 .introText {
     /* Background */
     display: flex;
@@ -253,7 +268,7 @@ Elements
     /* transition - when animation ends, transforms slowly back to place */
     transition: transform 0.6s ease, border-radius 0.4s ease, box-shadow 0.6s ease;
 }
-.mainIntroCardImg1:hover{
+.mainIntroCardImg1:active{
     /* Background */
     box-shadow: 
         0 1rem 2rem rgba(0, 0, 0, 0.5),
