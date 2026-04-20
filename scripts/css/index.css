@@ -282,3 +282,23 @@ Text
   font-weight: 500;
   font-style: normal;
 }
+#lawncare-anchor {
+    text-decoration: none;
+    color: inherit;
+}
+#aeration-anchor {
+    text-decoration: none;
+    color: inherit;
+}
+#treatments-anchor {
+    text-decoration: none;
+    color: inherit;
+}
+.footer-column {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-elements {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
