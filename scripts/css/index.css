@@ -103,7 +103,7 @@ Containers
     box-shadow: /* Creates a sharp shadow, then layers */
         0 0.5rem 1rem rgba(0, 0, 0, 0.25),
         0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-    aspect-ratio: 1024 / 1024;
+    aspect-ratio: 850 / 850;
     /* Alignment */
     margin: 2rem;
     margin-right: 4rem;
@@ -301,4 +301,9 @@ Text
     text-decoration: none;
     color: inherit;
     text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
