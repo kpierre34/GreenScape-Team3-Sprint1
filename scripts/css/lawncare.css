@@ -1,89 +1,127 @@
-/* Main Container */
-.service-container {
+:root {
+    --green-dark: #2e5e1b;
+    --green-mid: #4a7c30;
+    --green-light: #7cb342;
+    --text-main: #333;
+    --text-muted: #555;
+    --bg-page: #f8f9f6;
+    --bg-card: #ffffff;
+    --border: rgba(74, 124, 48, 0.14);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+.service-container {
+    max-width: 1100px;
     margin: 0 auto;
     padding: 60px 20px;
-    color: #333;
-    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-/* Shared Title Styling */
-.service-title {
-    font-size: 2.8rem;
-    color: #2e5e1b;
-    text-align: center;
-    margin: 60px 0 30px;
-    position: relative;
-}
-
-/* Adds a decorative green underline to the titles */
-.service-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #7cb342;
-    margin: 15px auto 0;
-    border-radius: 2px;
-}
-
-.service-container .service-title:first-of-type {
-    margin-top: 0;
-}
-
-/* Flexbox Layout for all sections */
 .service-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-    justify-content: center;
-    margin-bottom: 40px;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    align-items: flex-start;
 }
 
-/* Interactive hover effect on the entire section */
-.service-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    background-color: #fbfbfb; 
+@media (min-width: 900px) {
+    .service-section:nth-child(even) { flex-direction: row-reverse; }
 }
 
-/* Alternates the layout direction on desktop ONLY */
-@media (min-width: 768px) {
-    .service-section:nth-of-type(even) {
-        flex-direction: row-reverse;
-    }
+.service-text { flex: 1 1 450px; }
+
+.service-title {
+    font-size: 2.2rem;
+    color: var(--green-dark);
+    margin-bottom: 15px;
 }
 
-/* Shared Text Block */
-.service-text {
-    flex: 1 1 300px; 
-    text-align: left;
-    line-height: 1.7; 
+.service-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.service-text p { margin-bottom: 15px; text-align: left; }
+
+.subheading {
+    font-weight: bold;
+    color: var(--green-dark);
     font-size: 1.1rem;
+    margin: 20px 0 10px;
 }
 
-.service-text p {
+/* Bullet Point Alignment Fix */
+.service-text ul {
+    list-style: none;
     margin-bottom: 20px;
 }
 
-/* Shared Image Styling */
-.service-image {
-    flex: 1 1 300px; 
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    object-fit: cover;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+.service-text li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    text-align: left;
 }
 
-/* Subtle 3D pop effect when hovering over the images */
-.service-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.service-text li::before {
+    content: '•';
+    color: var(--green-light);
+    font-size: 1.4rem;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.pricing-block {
+    padding: 15px 20px;
+    background: rgba(184, 216, 154, 0.15);
+    border-left: 4px solid var(--green-light);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.pricing-block strong {
+    display: block;
+    color: var(--green-dark);
+    margin-bottom: 5px;
+}
+
+/* Smaller Images */
+.service-image {
+    flex: 0 0 300px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+    .service-section { padding: 25px; }
+    .service-image { max-width: 100%; flex: 1 1 auto; }
 }
