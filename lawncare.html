@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Lawn Care</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./scripts/css/menu.css">
     <link rel="stylesheet" href="./scripts/css/index.css">
+    <link rel="stylesheet" href = "scripts/css/lawncare.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,9 @@
 <body>
     <!-- Navigation Bar -->
     <header class="navbar-container">
-        <nav class="navbar" class="font1Bold"> 
+        <nav class="navbar font1Bold"> 
             <div class="navbar-brand">
-                <a href="index.html"><img id="logo" src="img/logo2.png"></a> 
+                <a href="index.html"><img id="logo" src="img/logo2.png" alt="Logo 2"></a> 
                 </div>
 
             <input type="checkbox" id="menu-toggle">
@@ -53,72 +54,69 @@
     </header>
 
     <!-- Main -->
-    <main id="main" class="font1Bold">
-        <!-- Introduction -->
-        <section id="containerIntro">
-            <div class="introText">
-                <div class="mainIntroTitle" data-text="GreenScape LLC">GreenScape LLC</div> <!-- Title -->
-                <!-- Info Cards -->
-                <div id="mainIntroGroup1">
-                    <div class="mainIntroSubTitle">Central Ohio's Fertilizer Needs</div>
-                    <span id="mainIntroDesc" class="font1">
-                        Founded in 2005, Green Star LLC in Delaware,
-                        Ohio, is dedicated to providing top-notch
-                        fertilizer and lawn care services, ensuring
-                        that your lawn remains healthy and vibrant
-                        throughout the year. With 18 years of
-                        experience, our team is equipped to handle
-                        various lawn conditions, from clay soils
-                        and high-traffic
-                    </span>
-                </div>
-                <div id="mainIntroGroup2">
-                    <div class="mainIntroCards">
-                        <a id = "lawncare-anchor" href = "lawncare.html">
-                            <p class="cardSplit">Lawn Care</p>
-                            <p class="font1">Keep grass green all season long</p>
-                            <img class="mainIntroCardImg1" src="./img/lawn2.jpg" alt="Example of lawn treatment services.">
-                        </a>
-                        
-                    </div>
-                    <div class="mainIntroCards">
-                        <a id = "aeration-anchor" href = "aeration-seeding.html">
-                            <p class="cardSplit">Aeration & Seeding</p>
-                            <p class="font1">Improve grass thickness & health</p>
-                            <img class="mainIntroCardImg1" src="./img/house4.jpg" alt="Example of lawn treatment services.">
-                        </a>
-                        
-                    </div>
-                    <div class="mainIntroCards">
-                        <a id = "treatments-anchor" href = "treatments.html">
-                            <p class="cardSplit">Treatments</p>
-                            <p class="font1">Specialize treatment services for best results</p>
-                            <img class="mainIntroCardImg1" src="./img/flowerbed2.jpg" alt="Example of lawn treatment services.">
-                        </a>
-                        
-                    </div>
-                </div>
+    <main class="service-container">
+        
+        <h1 class="service-title">Lawn Care</h1>
+        <div class="service-section">
+            <div class="service-text">
+                <p>Our Lawn Care Program is designed to make your lawn healthy, green, and weed-free through a series of customized treatments and services. We understand that each lawn is unique, and our program is tailored to address the specific needs of your lawn, whether it’s dealing with clay soils, high-traffic areas, or poor water retention.</p>
+                <p>By choosing our program, you ensure that your lawn receives consistent care throughout the seasons, leading to a lush, vibrant yard that enhances the beauty of your home. Pricing is available by application or through seasonal packages, with discounts available for long-term commitments.</p>
             </div>
-            <div id="mainIntroImg">
-                <!-- Add potential content here? -->
-                <div class="mainIntroImgNav">Example text</div>
+            <img src="img/lawncare.jpg" alt="Lawn Care" class="service-image">
+        </div>
+
+        <h1 class="service-title">Fertilizer Application</h1>
+        <div class="service-section">
+            <div class="service-text">
+                <p>Regular fertilizer application is crucial for maintaining a healthy lawn. Our high-quality fertilizers provide essential nutrients that promote optimal grass growth and resilience. This service ensures that your lawn stays green and robust, even in challenging conditions.</p>
+                <p>Included in our comprehensive lawn care program or available as a standalone service, our fertilizer application guarantees your lawn receives the nourishment it needs. Don't wait to see the difference; contact us today to schedule your fertilization service and keep your lawn thriving.</p>
             </div>
-        </section>
+            <img src="img/fertilizer.png" alt="Fertilizer Application" class="service-image">
+        </div>
+
+        <h1 class="service-title">Weed Control</h1>
+        <div class="service-section">
+            <div class="service-text">
+                <p>Weed control is essential for maintaining a uniform and attractive lawn. Our effective treatments eliminate existing weeds and prevent new ones from taking root, ensuring your lawn remains lush and free from unsightly intruders. We offer both post-emergent weed control to address current issues and pre-emergent treatments to stop weeds before they start.</p>
+                <p>These services are included in our lawn care program or available separately. Keep your lawn pristine and weed-free by reaching out to us now for our expert weed control solutions.</p>
+            </div>
+            <img src="img/weedcontrol.png" alt="Weed Control" class="service-image">
+        </div>
+
     </main>
     
     <!-- Footer -->
     <footer id="ftr">
-        <section>
-            <table>
-                <tr>
-                    <td>Best Gardening Services in Delaware, Ohio</td>
-                    <td>Phone: (123) 456-7890 <button class="btn1">Contact Us</button></td>
-                    <td>Email: info@greenscape.com <button class = "btn2">Send Email</button></td>
-                </tr>
-            </table>
-        </section>
-    </footer>
 
+    <div class="footer-container">
+  <div class="footer-column">
+    <p>2024 GreenScape LLC. All rights reserved</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Contact</h3>
+    <p><a class = "footer-elements" href="mailto:info@greenscapes.com">info@greenscapes.com</a></p>
+    <p><a class = "footer-elements" href = "tel:+1555123457">(555) 123-4567</a></p>
+    <p><a class = "footer-elements" href = "https://facebook.dacc-appdev.com/">Facebook</a></p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Main Offerings</h3>
+    <p><a class = "footer-elements" href="lawncare.html">Lawn Care</a></p>
+    <p><a class = "footer-elements" href="aeration-seeding.html">Aeration & Seeding</a></p>
+    <p><a class = "footer-elements" href="treatments.html">Treatments</a></p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Explore More</h3>
+    <p><a class = "footer-elements" href="team.html">Team</a></p>
+    <p><a class = "footer-elements" href="blog.html">Blog</a></p>
+    <p><a class = "footer-elements" href="contact-us.html">Contact Us</a></p>
+  </div>
+</div>
+    </footer>
+    
+    
     <!-- JavaScript -->
     <script src="./scripts/js/script.js"></script>
 </body>

@@ -1,0 +1,89 @@
+/* Main Container */
+.service-container {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+/* Shared Title Styling */
+.service-title {
+    font-size: 2.8rem;
+    color: #2e5e1b;
+    text-align: center;
+    margin: 60px 0 30px;
+    position: relative;
+}
+
+/* Adds a decorative green underline to the titles */
+.service-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #7cb342;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.service-container .service-title:first-of-type {
+    margin-top: 0;
+}
+
+/* Flexbox Layout for all sections */
+.service-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interactive hover effect on the entire section */
+.service-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #fbfbfb; 
+}
+
+/* Alternates the layout direction on desktop ONLY */
+@media (min-width: 768px) {
+    .service-section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Shared Text Block */
+.service-text {
+    flex: 1 1 300px; 
+    text-align: left;
+    line-height: 1.7; 
+    font-size: 1.1rem;
+}
+
+.service-text p {
+    margin-bottom: 20px;
+}
+
+/* Shared Image Styling */
+.service-image {
+    flex: 1 1 300px; 
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle 3D pop effect when hovering over the images */
+.service-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
