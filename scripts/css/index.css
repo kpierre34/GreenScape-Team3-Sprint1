@@ -154,7 +154,7 @@ Containers
     transform: scale(1.05);
     transition: transform 0.3s ease, color 0.2s ease;
 }
-#mainIntroImgNav:active{ /* ======================================================================================== */
+#mainIntroImgNav:active{
     /* Background */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -168,7 +168,6 @@ Containers
     top: 50%;
     left: 0;
     /* Text */
-    color: transparent;
     /* Animation */
     transition: all 0.5s ease;
 }
@@ -300,6 +299,10 @@ Elements
     color: #b9d89f;
     /* Animation */
     transition: color 1.2s ease;
+}
+
+#SmryOpen1{
+    color: #b4d6b6;
 }
 /* ========
 Media
