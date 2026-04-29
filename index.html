@@ -137,5 +137,30 @@
     
     <!-- JavaScript -->
     <script src="./scripts/js/script.js"></script>
+    <script>let popupTriggered = false;
+
+function gameLoop() {
+    if (popupTriggered) return; // Stop checking once it has appeared
+
+    // 1 in 100,000 chance
+    const rarity = 20000;
+    const roll = Math.floor(Math.random() * rarity);
+
+    if (roll === 7) { // Can be any number between 0 and 99,999
+        showPopup();
+        popupTriggered = true; 
+    }
+
+    // This calls the function again on the next screen refresh
+    requestAnimationFrame(gameLoop);
+}
+
+function showPopup() {
+    document.getElementById('randomPopup').style.display = 'block';
+    console.log("The 1/100,000 chance finally hit!");
+}
+
+// Start the loop
+requestAnimationFrame(gameLoop);</script>
 </body>
 </html>
