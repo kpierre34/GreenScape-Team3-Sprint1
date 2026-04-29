@@ -32,11 +32,11 @@
                 <li><a href="index.html">Home</a></li>
                 
                 <li class="dropdown" id="csharp-dropdown">
-                    <a href="services.html">Services</a>
+                    <a>Services</a>
                     <ul class="submenu">
-                        <li><a href="#csharp-console">Lawn Care</a></li>
-                        <li><a href="#csharp-desktop">Aeration and Seeding</a></li>
-                        <li><a href="#csharp-web">Treatments</a></li>
+                        <li><a href="lawncare.html">Lawn Care</a></li>
+                        <li><a href="aeration-seeding.html">Aeration and Seeding</a></li>
+                        <li><a href="treatments.html">Treatments</a></li>
                     </ul>
                 </li>
                 
@@ -99,6 +99,11 @@
             </div>
             <!-- Large Image -->
             <div id="mainIntroImg">
+                <div id="mainIntroImgNav" href="treatments.html">
+                    Read More
+                    <!-- Expansion - Invisible until :active -->
+                    <span id="mainIntroImgActive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur autem quam doloribus quasi cum architecto facilis ipsa nemo, aperiam earum dignissimos, fugit praesentium tempora quisquam quas aspernatur soluta molestias.</span>
+                </div>
             </div>
         </section>
     </main>
@@ -137,5 +142,30 @@
     
     <!-- JavaScript -->
     <script src="./scripts/js/script.js"></script>
+    <script>let popupTriggered = false;
+
+function gameLoop() {
+    if (popupTriggered) return; // Stop checking once it has appeared
+
+    // 1 in 100,000 chance
+    const rarity = 20000;
+    const roll = Math.floor(Math.random() * rarity);
+
+    if (roll === 7) { // Can be any number between 0 and 99,999
+        showPopup();
+        popupTriggered = true; 
+    }
+
+    // This calls the function again on the next screen refresh
+    requestAnimationFrame(gameLoop);
+}
+
+function showPopup() {
+    document.getElementById('randomPopup').style.display = 'block';
+    console.log("The 1/100,000 chance finally hit!");
+}
+
+// Start the loop
+requestAnimationFrame(gameLoop);</script>
 </body>
 </html>
