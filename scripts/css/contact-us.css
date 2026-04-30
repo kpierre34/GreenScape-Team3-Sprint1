@@ -1,249 +1,203 @@
-/* =========================
-   GLOBAL / TEXT
-========================= */
-h1 {
-    font-size: 40px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
+/* =========================================
+   Contact Us Page Styling (Final Consolidated)
+   ========================================= */
 
-p {
-    padding: 0 40px 30px 10px;
-    margin: 0;
-}
-
-/* =========================
-   CONTACT FORM
-========================= */
+/* Main Container */
 .contact-us {
-    width: 90%;
-    max-width: 1550px;
-    margin: 50px auto;
-    padding: 60px;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    max-width: 1100px !important;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff; /* Blocks page color bleeding */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
     box-sizing: border-box;
 }
 
-.contact-us-text {
+/* Headings & Text */
+.contact-us .contact-us-text {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* --- Form Layout --- */
-.form-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 120px;
-    margin-bottom: 20px;
-}
-
-.form-left,
-.form-right {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-}
-
-/* --- Inputs --- */
-.field-label {
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+.contact-us h1.contact-us-text {
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    color: #000 !important;
 }
 
-#request,
-#name,
-#email,
-#number {
+.contact-us p.contact-us-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+/* Form Layout (Desktop) */
+.contact-us .form-layout {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgb(180, 180, 180);
-    background-color: rgb(230, 230, 230);
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout columns - Zeroed out global margins/padding for alignment */
+.contact-us .form-left,
+.contact-us .form-right {
+    flex: 1 1 0%; 
+    min-width: 0; 
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: flex-start !important;
+}
+
+.contact-us .form-right {
+    gap: 20px;
+}
+
+.contact-us .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: flex-start !important;
+}
+
+/* Labels */
+.contact-us .field-label {
+    font-weight: 600;
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+    font-size: 1rem;
+    color: #000 !important;
+}
+
+/* Inputs and Textarea */
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us input[type="tel"],
+.contact-us textarea,
+.contact-us textarea#request {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    display: block !important;
+    background-color: #e8e8e8 !important; 
+    border: 1px solid #d1d1d1 !important;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 1rem;
     box-sizing: border-box;
-    resize: none;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    color: #000;
 }
 
-#request {
-    min-height: 150px;
+.contact-us input[type="text"]:focus,
+.contact-us input[type="email"]:focus,
+.contact-us input[type="tel"]:focus,
+.contact-us textarea:focus,
+.contact-us textarea#request:focus {
+    border-color: #999 !important;
 }
 
-/* --- Terms --- */
-.terms-container {
+/* Textarea Specific Rules (Disabled resizing) */
+.contact-us textarea,
+.contact-us textarea#request {
+    flex-grow: 1;
+    resize: none !important;
+    min-height: 225px; 
+}
+
+/* Terms and Conditions Container */
+.contact-us .terms-container {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin: 30px 0;
+    margin-bottom: 40px;
+    padding: 0 10%;
 }
 
-.terms-container input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
+/* Checkbox Styling */
+.contact-us .terms-container input[type="checkbox"] {
+    margin-top: 3px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
+    accent-color: #222 !important; 
     flex-shrink: 0;
 }
 
-.terms-container a {
-    color: #000;
+/* Terms Text and Links */
+.contact-us .terms-container label {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #222;
+}
+
+.contact-us .terms-container a {
+    color: #222;
     text-decoration: underline;
 }
 
-/* --- Button --- */
-.button-container {
+.contact-us .terms-container a:hover {
+    color: #4a8532;
+}
+
+/* Submit Button */
+.contact-us .button-container {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-#button-send {
-    width: 200px;
-    height: 50px;
-    border-radius: 7px;
-    background-color: #277000;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+.contact-us #button-send {
+    background-color: #4a8532 !important; 
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 14px 40px;
+    border: none !important;
+    border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
 }
 
-#button-send:hover {
-    background-color: #1e5c00;
+.contact-us #button-send:hover {
+    background-color: #3b6b28 !important;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-.navbar-container {
-    background-color: #DFE9CB;
-    box-shadow: 0 12px 5px rgba(0, 0, 0, 0.1);
-    
-}
-
-/* --- Layout --- */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    height: 140px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* --- Logo --- */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-#logo {
-    height: 120px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-
-/* --- Center Nav Links --- */
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links > li {
-    position: relative;
-}
-
-.nav-links a {
-    display: block;
-    padding: 15px 20px;
-    color: #235C32;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: #b5d8cf;
-    color: #1f5030;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: #235C32 0px 4px 8px;
-}
-
-/* --- Dropdown --- */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #b5d8cf;
-    min-width: 180px;
-    z-index: 10;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown:hover .submenu {
-    display: block;
-}
-
-.submenu a {
-    padding: 10px 20px;
-}
-
-.submenu li:hover a {
-    background-color: #76c4e2;
-}
-
-/* --- Hamburger (future mobile use) --- */
-#menu-toggle {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #235C32;
-    display: block;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* =========================================
+   Responsive Design (Mobile & Tablets)
+   ========================================= */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 32px;
+    .contact-us {
+        padding: 20px;
     }
 
-    #request {
-        min-height: 120px;
+    .contact-us .form-layout {
+        flex-direction: column; 
+        gap: 20px;
     }
 
-    .form-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    .contact-us textarea,
+    .contact-us textarea#request {
+        min-height: 200px; 
+    }
+
+    .contact-us .terms-container {
+        padding: 0; 
+    }
+    
+    .contact-us h1.contact-us-text {
+        font-size: 2rem;
     }
 }
