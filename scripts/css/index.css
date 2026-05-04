@@ -352,3 +352,64 @@ a{ /* Text - links */
     text-decoration: none;
     color: inherit;
 }
+
+/* Ensure the image container acts as the anchor for the overlay */
+#mainIntroImg {
+    position: relative;
+    /* You likely already have a background-image and height set here */
+    min-height: 400px; /* Added just to ensure it has height if you don't have one set */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The dark, semi-transparent box behind the text */
+.image-text-overlay {
+    background-color: rgba(0, 0, 0, 0.65); 
+    color: #ffffff; 
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 80%; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+    
+    /* NEW: Controls the overflow */
+    max-height: 60vh; /* Prevents the box from being taller than 60% of the screen */
+    overflow-y: auto; /* Adds a vertical scrollbar if the text exceeds the max-height */
+}
+
+/* The Title */
+.overlay-title {
+    margin: 0 0 15px 0;
+    font-size: 2rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The Paragraph */
+.overlay-text {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Custom Scrollbar for the overlay */
+.image-text-overlay::-webkit-scrollbar {
+    width: 8px;
+}
+
+.image-text-overlay::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+}
+
+.image-text-overlay::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+}
+
+.image-text-overlay::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8); 
+}
