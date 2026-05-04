@@ -389,10 +389,12 @@ a{ /* Text - links */
 }
 
 /* The Paragraph */
-.overlay-text {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
+.image-text-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* This dark box will stop the 'dots' */
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Custom Scrollbar for the overlay */
