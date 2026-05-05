@@ -113,15 +113,7 @@ Containers
     /* transition - when animation ends, transforms slowly back to place */
     transition: width 0.6s ease,transform 0.6s ease, box-shadow 0.6s ease;
 }
-#mainIntroImg:hover{
-    /* Background */
-    box-shadow: 
-        0 1rem 2rem rgba(0, 0, 0, 0.3),
-        0 2.5rem 5rem rgba(0, 0, 0, 0.25);
-    /* Animation */
-    transform: scale(1.02);
-    transition: transform 1s ease;
-}
+
 #mainIntroImgNav{
     /* Background */
     background-color: #000000bb;
@@ -144,30 +136,7 @@ Containers
     transition:
     transform 0.6s ease, color 0.2s ease,
 }
-#mainIntroImgNav:hover{
-    /* Text */
-    color: #e8ffe9;
-    /* Animation */
-    transform: scale(1.05);
-    transition: transform 0.3s ease, color 0.2s ease;
-}
-#mainIntroImgNav:active{
-    /* Background */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 
-        0 1rem 2rem rgba(0, 0, 0, 0.5),
-        0 2.5rem 5rem rgba(0, 0, 0, 0.25);
-    border: 0.05rem, solid, #8ca87f;
-    /* Alignment */
-    padding: 0.5rem 1rem;
-    position: relative;
-    top: 50%;
-    left: 0;
-    /* Text */
-    /* Animation */
-    transition: all 0.5s ease;
-}
+
 /* ========
 Elements
 ======== */
@@ -281,21 +250,8 @@ Elements
     transition: transform 0.3s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
 }
 
-#mainIntroImgActive{
-    background: transparent;
-    /* Sizing */
-    /* Alignment */
-    position: absolute;
-    /* Text */
+details[open] summary{
     color: transparent;
-    /* Animation */
-    transition: color 0.4s ease;
-}
-#mainIntroImgActive:active{
-    /* Text */
-    color: #b9d89f;
-    /* Animation */
-    transition: color 1.2s ease;
 }
 
 #SmryOpen1{
@@ -350,7 +306,7 @@ Media
         margin: auto;
         gap: 1rem;
         /* Sizing */
-        width: clamp(25vw, 35vw, 40vw);
+        width: clamp(5rem, 20rem, 40rem)
     }
     /* Elements */
     .mainIntroTitle{
