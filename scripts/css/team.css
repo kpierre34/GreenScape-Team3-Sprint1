@@ -1,0 +1,275 @@
+/* Base Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#request{
+    background-color: #5fd87fab;
+    border: solid 0.2rem #c2ffd2ab;
+    border-radius: 0.5rem;
+    /* Alignment */
+    margin-left: 50px;
+}
+
+/* --- Team Section--- */
+/* Container for the team title */
+
+.team-title  {
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #328671;
+    border-radius: 0.5rem;
+    box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the team members section */
+.team-container {
+    text-align: center;
+}
+
+/* team member's image */
+.team-member-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+    
+}
+/* --- Navigation Container --- */
+.navbar-container {
+    background-color: #DFE9CB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    /* Main Flexbox setting: Icon (left) and Links (right) */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    max-height: 120px;
+    margin: 0 auto; /* Center the navbar content */
+}
+
+#logo{
+    height: 120px;
+}
+
+/* --- Left Side: Brand/Icon --- */
+.navbar-brand a {
+    color: #1f5030; /* Gold color for the brand name */
+    padding: 15px 0;
+    display: block;
+}
+
+/* --- Right Side: Navigation Links (Desktop) --- */
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: right; /* Align links to the right */
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px 20px;
+    color: #235C32;
+    transition: background-color 0.3s;;
+}
+
+.nav-links a:hover {
+    background-color: #b5d8cf;
+    color: #1f5030;
+}
+
+/* --- Dropdown Styling (Desktop) --- */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b5d8cf;
+    min-width: 180px;
+    z-index: 10;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block; 
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+.submenu li:hover a {
+    background-color: #76c4e2;
+}
+
+/* --- Hamburger Icon (Hidden on Desktop) --- */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+/* ========
+Footer
+======== */
+#ftr{
+    /* Background */
+    background-color: #DFE9CB;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 0.2rem;
+    border-color: #032e15;
+    /* Spacing */
+    margin: 1rem;
+    gap: 5rem;
+    position: relative;
+    bottom: 0;
+
+     
+    text-align: left;
+    padding: 2rem;
+    margin: 0%;
+    gap: 5rem;
+    position: relative;
+    bottom: -1.5rem;
+
+   .footer-container {
+  display: flex;            
+  justify-content: space-around; 
+  
+  padding: 40px;           
+  align-items: flex-start;  
+
+
+}
+
+.footer-column h3 {
+  margin-top: 0;           /* Removes extra gap above the titles */
+  font-weight: bold;
+}
+}
+
+table {
+    /* Alignment */
+    width: 100%;
+    text-align: left;
+    /* Text */
+    color: #032e15;
+}
+.bnt{
+    /* Background */
+    background-color: #1f5030;
+    border: none;
+    border-radius: 0.2rem;
+    /* Text */
+    color: #c0e86a;
+    font-size: 1rem;
+    font-weight: bold;
+    /* Spacing */
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn1:hover{
+    /* Background */
+    background-color: #7fc99e;
+    /* Text */
+    color: #1f5030;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn2:hover{
+    /* Background */
+    background-color: #7fc99e;
+    /* Text */
+    color: #1f5030;
+    /* Animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* ==================================== */
+/* --- Mobile/Tablet Responsiveness --- */
+/* ==================================== */
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-wrap: wrap; /* Allow the nav-links to drop below the brand/hamburger */
+        padding: 0 20px;
+    }
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block; 
+        padding: 15px 0;
+    }
+
+    /* Navigation Links (Mobile) */
+    .nav-links {
+        /* On mobile, the links take full width and stack vertically */
+        flex-direction: column;
+        width: 100%;
+        max-height: 0; /* Initially hidden */
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background-color: #333; 
+        text-align: center;
+        /* Position links below the brand/hamburger by setting width to 100% */
+        order: 1; /* Force nav-links to the second row in the flex container */
+    }
+
+    .nav-links > li {
+        width: 100%;
+        border-top: 1px solid #555;
+    }
+    
+    /* Toggle menu open: Checkbox state controls visibility */
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 500px; /* Must be larger than total link height */
+    }
+
+    /* Mobile Dropdowns */
+    .submenu {
+        position: static; /* Stack naturally below parent */
+        width: 100%;
+        display: none; /* Hide by default, show with JS 'active' class */
+        background-color: #555;
+    }
+
+    /* JavaScript 'active' class for mobile submenu toggle */
+    .dropdown.active .submenu {
+        display: block;
+    }
+}
