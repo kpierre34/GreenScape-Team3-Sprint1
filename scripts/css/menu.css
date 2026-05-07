@@ -141,14 +141,12 @@ Footer
     position: relative;
     bottom: -1.5rem;
 
-   .footer-container {
-  display: flex;            
-  justify-content: space-around; 
+    .footer-container {
+    display: flex;            
+    justify-content: space-around; 
   
-  padding: 40px;           
-  align-items: flex-start;  
-
-
+    padding: 40px;           
+    align-items: flex-start;  
 }
 
 .footer-column h3 {

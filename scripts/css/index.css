@@ -261,6 +261,7 @@ Elements
 details[open] summary{
     color: transparent;
 }
+
 /* ========
 Media
 ======== */
@@ -302,7 +303,7 @@ Media
         
         /* Sizing */
         width: 20rem;
-        height: 20rem;
+        height: 18rem;
     }
 
     #mainIntroImg{
