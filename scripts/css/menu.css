@@ -17,8 +17,6 @@ a{
     background-color: #5fd87fab;
     border: solid 0.2rem #c2ffd2ab;
     border-radius: 0.5rem;
-    /* Alignment */
-    margin-left: 50px;
 }
 
 .text-container {
@@ -40,7 +38,6 @@ a{
     align-items: center;
     padding: 0 20px;
     max-width: 1200px;
-    max-height: 120px;
     margin: 0 auto; /* Center the navbar content */
 }
 
@@ -235,19 +232,31 @@ table {
     
     /* Toggle menu open: Checkbox state controls visibility */
     #menu-toggle:checked ~ .nav-links {
-        max-height: 500px; /* Must be larger than total link height */
+        max-height: 1000px;; /* Must be larger than total link height */
     }
 
     /* Mobile Dropdowns */
     .submenu {
         position: static; /* Stack naturally below parent */
         width: 100%;
+        max-height: 0;
+        overflow: hidden;
         display: none; /* Hide by default, show with JS 'active' class */
         background-color: #555;
+        transition: max-height 0.3s ease;
     }
 
     /* JavaScript 'active' class for mobile submenu toggle */
     .dropdown.active .submenu {
-        display: block;
+         max-height: 300px;
+    }
+
+    .dropdown.active {
+        padding-bottom: 10px;
+    }
+
+
+    #request{
+        border-radius: 0;
     }
 }
