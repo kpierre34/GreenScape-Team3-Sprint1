@@ -122,6 +122,7 @@ Containers
     display: flex;
     /* sizing */
     width: 80%;
+    max-height: 95%;
     /* Alignment */
     padding: 0.5rem 1rem;
     position: absolute;
@@ -130,8 +131,12 @@ Containers
     right: 0;
     justify-self: center;
     justify-content: center;
+    overflow-y: scroll;
     /* Text */
     color: #c0c9b0;
+    /* Scrollbar */
+        scrollbar-width: thin;
+        scrollbar-color: #85ffcc transparent;
     /* Animation */
     transition:
     transform 0.6s ease, color 0.2s ease;
@@ -258,7 +263,11 @@ Elements
     transition: transform 0.3s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
 }
 
-details[open] summary{
+summary::before {
+ content: "* ";
+ cursor: pointer;
+}
+details[open] summary::after {
     color: transparent;
 }
 
