@@ -264,11 +264,16 @@ Elements
 }
 
 summary::before {
- content: "* ";
+ content: "▶ ";
  cursor: pointer;
 }
+details[open] summary {
+    font-size: 0rem;
+}
 details[open] summary::after {
-    color: transparent;
+    content: "▼";
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 
 /* ========
@@ -358,4 +363,17 @@ Text
 a{ /* Text - links */
     text-decoration: none;
     color: inherit;
+}
+
+/* Special Text Styles */
+.emailHighlight{
+    color: #c9ff9a;
+    text-decoration: underline;
+}
+.emailHighlight:active{
+    color: #678a49;
+    text-decoration: underline;
+}
+.emailHighlight:visited{
+    color: #3b6e0f;
 }
