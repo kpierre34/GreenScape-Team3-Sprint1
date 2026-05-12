@@ -16,6 +16,20 @@ body{
     background-attachment: fixed;
     
 }
+
+summary::before {
+ content: "▶ ";
+ cursor: pointer;
+}
+details[open] summary {
+    font-size: 0rem;
+}
+details[open] summary::after {
+    content: "▼";
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
 /* ========
 Containers
 ======== */
@@ -262,20 +276,6 @@ Elements
     transform: scale(1.2);
     transition: transform 0.3s ease, border-radius 0.2s ease, box-shadow 0.3s ease;
 }
-
-summary::before {
- content: "▶ ";
- cursor: pointer;
-}
-details[open] summary {
-    font-size: 0rem;
-}
-details[open] summary::after {
-    content: "▼";
-    font-size: 1rem;
-    margin-right: 1rem;
-}
-
 /* ========
 Media
 ======== */
