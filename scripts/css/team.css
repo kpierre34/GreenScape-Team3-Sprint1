@@ -34,20 +34,39 @@ a{
     box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Container for the team members section */
-.team-container {
+/* Container for the intro */
+.team-intro {
     text-align: center;
 }
 
 /* team member's image */
 .team-member-image {
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 20px;
-    
+    border: #032e15 solid 0.5rem;
+    border-radius: 1.3rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* team member's image interaction */
+.team-member-image:hover {
+    rotate: 5deg;
+    transform: scale(1.05);
+    box-shadow: #032e15 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-button {
+    background-color: #1f5030;
+    border: none;
+    border-radius: 0.2rem;
+    color: #c0e86a;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 /* --- Navigation Container --- */
 .navbar-container {
