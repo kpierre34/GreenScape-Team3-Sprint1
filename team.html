@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
     <title>Team page</title>
+    <!-- External CSS Files -->
     <link rel="stylesheet" href="./scripts/css/menu.css">
     <link rel="stylesheet" href="./scripts/css/team.css">
+    <!-- Internal CSS -->
     <style>
-        /* Stylizing the team list */
-        ol {
-            list-style-position: inside;
-            text-align: center;
-            padding: 0;
-            margin-top: 50px;
+        /* Stylizing the ordered list */
+        ol{
+            list-style-position:inside;
+            text-align:center;
+            padding:0;
+            margin-top:50px;
         }
-
-        ol li {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-size: 3rem;
-            font-weight: 750;
-            text-transform: capitalize;
-            margin-bottom: 15px;
-            color: #333;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        /* Ordered list text styling */
+        ol li{
+            font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+            font-size:3rem;
+            font-weight:750;
+            text-transform:capitalize;
+            margin-bottom:15px;
+            color:#333;
+            letter-spacing:1px;
+            text-shadow:2px 2px 4px rgba(0,0,0,0.1);
         }
-
-        /* Subtle hover effect */
-        ol li:hover {
-            color: #007bff; /* Or your brand color */
-            transition: 0.7s ease;
+        /* Hover effect for list items */
+        ol li:hover{
+            color:#007bff;
+            transition:0.7s ease;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header class="navbar-container">
-        <nav class="navbar font1Bold"> 
+        <nav class="navbar font1Bold">
+            <!-- Logo -->
             <div class="navbar-brand">
-                <a href="index.html"><img id="logo" src="img/logo2.png" alt="Logo 2"></a> 
-                </div>
-
+                <a href="index.html">
+                    <img id="logo" src="img/logo2.png" alt="Logo 2">
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
             <input type="checkbox" id="menu-toggle">
-            
+            <!-- Hamburger Menu -->
             <label for="menu-toggle" class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </label>
-
+            <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- Services Dropdown -->
                 <li class="dropdown" id="csharp-dropdown">
                     <a>Services</a>
                     <ul class="submenu">
@@ -59,57 +68,161 @@
                         <li><a href="treatments.html">Treatments</a></li>
                     </ul>
                 </li>
-                
-                <li><a href="team.html">Team</a></li>
-                <li><a href="blog.html">Blog</a></li>
-
+                <li>
+                    <a href="team.html">Team</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <!-- Contact Link -->
                 <li class="dropdown" id="javascript-dropdown">
                     <a href="contact-us.html">Contact Us</a>
                 </li>
-
-                <li id="request"><a href="request">Request a Quote</a></li>
+                <!-- Quote Button -->
+                <li id="request">
+                    <a href="request">Request a Quote</a>
+                </li>
             </ul>
         </nav>
     </header>
-        <div class="team-intro">
-            <button class="team-button">Join Our Team</button>
+    <!-- Team Section -->
+    <div class="team-intro">
+        <!-- Team Button -->
+        <button class="team-button">Join Our Team</button>
+        <!-- Team Title -->
         <h1 class="team-title">Meet the Team</h1>
-        <div class="team-member-image"><h2>Chris Bacon</h2><img src="img/house1.jpg" width="450" height="600" alt="Team Member"></div>
-         <div class="team-member-image"><h2>April May</h2><img src="img/house2.jpg" width="450" height="600" alt="Team Member"></div>
-         <div class="team-member-image"><h2>Isadore Bell</h2><img src="img/house3.jpg" width="450" height="600" alt="Team Member"></div>
-         <div class="team-member-image"><h2>phil dirt</h2><img src="img/house4.jpg" width="450" height="600" alt="Team Member"></div>
+        <!-- Team Member 1 -->
+        <div class="team-member-image">
+            <h2>Chris Bacon</h2>
+            <img src="img/house1.jpg" width="400" height="400" alt="Team Member">
+          <figcaption class = vertical-text>
+    <!-- Employee Introduction -->
+    <h2>Introducing Chris P. Bacon</h2>
+    <!-- Job Title -->
+     <h3>Our Soil Science Specialist</h3>
+    <!-- Paragraph 1 -->
+   <p>Chris P. Bacon has been an indispensable part of GreenScape Solutions for over 20 years, serving as our authority on lawn terraforming and soil science. His tenure with the company is a testament to his expertise in building landscapes from the ground up—literally. Chris understands that the foundation of a truly healthy and sustainable lawn lies beneath the surface. He specializes in assessing and manipulating the soil structure, drainage, and composition of a property. This includes complex projects such as correcting severe grading issues, improving water runoff, and creating custom soil blends to ensure optimal conditions for turf growth. His work in terraforming is essential for clients who need radical changes to their property's topography or functionality.</p>
+    <!-- paragraph 2 -->
+   <p>As an expert in soil science, Chris's process begins with a meticulous analysis of the existing environment, using scientific rigor to diagnose nutrient deficiencies, pH imbalances, and compaction problems. He doesn't just treat the symptoms; he addresses the root cause, implementing sustainable solutions that foster deep, resilient turf and vibrant plant life. Whether he's preparing a site for a new construction or rehabilitating an aged, struggling lawn, Chris P. Bacon's two decades of specialized knowledge guarantee that the ground underfoot is perfectly prepared to support a thriving, long-lasting GreenScape Solutions masterpiece.</p>
+  
+</figcaption>
         </div>
-   
-            <footer id="ftr">
-
-    <div class="footer-container">
-  <div class="footer-column">
-    <p>2024 GreenScape LLC. All rights reserved</p>
-  </div>
-
-  <div class="footer-column">
-    <h3>Contact</h3>
-    <p><a class = "footer-elements" href="mailto:info@greenscapes.com">info@greenscapes.com</a></p>
-    <p><a class = "footer-elements" href = "tel:+1555123457">(555) 123-4567</a></p>
-    <p><a class = "footer-elements" href = "https://facebook.dacc-appdev.com/">Facebook</a></p>
-  </div>
-
-  <div class="footer-column">
-    <h3>Main Offerings</h3>
-    <p><a class = "footer-elements" href="lawncare.html">Lawn Care</a></p>
-    <p><a class = "footer-elements" href="aeration-seeding.html">Aeration & Seeding</a></p>
-    <p><a class = "footer-elements" href="treatments.html">Treatments</a></p>
-  </div>
-
-  <div class="footer-column">
-    <h3>Explore More</h3>
-    <p><a class = "footer-elements" href="team.html">Team</a></p>
-    <p><a class = "footer-elements" href="blog.html">Blog</a></p>
-    <p><a class = "footer-elements" href="contact-us.html">Contact Us</a></p>
-  </div>
-</div>
+        <!-- Team Member 2 -->
+        <div class="team-member-image">
+            <h2>April May</h2>
+            <img src="img/house2.jpg" width="400" height="400" alt="Team Member">
+           <!-- Team Member 2 info -->
+            <figcaption class="vertical-text">
+               <!-- Employee Introduction -->
+               <h2 >Meet April May: </h2>
+                <!-- Job Title -->
+                 Our Horticultural Expert
+                <!-- Paragraph 1 -->
+               <p>April May is a cornerstone of the GreenScape Solutions team, bringing 14 years of dedicated experience to our clients across Central Ohio. As our resident expert horticulturist, April's passion for plants is evident in every project she touches. She possesses a rare depth of knowledge regarding regional flora, soil ecology, and sustainable growing practices, allowing her to select and cultivate the perfect combination of annuals, perennials, and shrubs to ensure year-round vibrancy. April specializes in flower bed design and maintenance, expertly transforming bare ground into breathtaking displays of color, texture, and fragrance, all while ensuring long-term health and easy care for our clients.</p>
+                <!-- Paragraph 2 -->
+                April's designs are renowned for their artistry and functionality. She works closely with each homeowner to understand their aesthetic preferences, sunlight conditions, and maintenance goals, crafting bespoke flower beds that enhance the unique character of the property. Beyond initial design, April oversees meticulous maintenance plans, providing the specialized pruning, fertilization, and seasonal rotation necessary to keep flower beds flourishing beautifully from spring thaw to late autumn. Her commitment to excellence and deep understanding of plant science makes her an invaluable asset, guaranteeing that your garden spaces not only look stunning but are ecologically sound and built to thrive.</p>
+            </figcaption>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member-image">
+            <h2>Isadore Bell</h2>
+            <img src="img/house3.jpg" width="400" height="400" alt="Team Member">
+           <!-- Team Member 3 info --> 
+            <figcaption hidden>
+                <!-- Employee Introduction -->
+                <h2>Introducing Isadore Bell: </h2>
+                 <!-- Job Title -->
+                <h3>Our Climatology and Maintenance Specialist</h3>
+                <!-- Paragraph 1 -->
+                <p>Isadore Bell is a living history of GreenScape Solutions, having served the Central Ohio community for close to 30 years. His nearly three decades of service make him one of the most experienced and trusted members of our team, with an encyclopedic knowledge of what it takes to maintain a flawless landscape year-round. Isadore specializes in lawn care maintenance, bringing a deep, consistent standard of excellence to every property he oversees. His routine maintenance programs go beyond simple mowing; they are meticulously planned schedules covering essential tasks like aeration, dethatching, seasonal clean-ups, and precise trimming to ensure every lawn and garden bed remains healthy, clean, and immaculately presented throughout the changing seasons.</p>
+                <!-- Paragraph 2 -->
+                <p>What truly sets Isadore apart is his expertise in grass and plant climatology. Having worked in Central Ohio for so long, he possesses an unparalleled understanding of how local weather patterns, microclimates, and extreme temperature shifts impact specific grass types and plant health. Isadore uses this deep knowledge to anticipate problems before they arise, adjusting watering schedules, modifying soil treatments, and preparing landscapes for everything from summer droughts to harsh winter freezes. His ability to fuse decades of hands-on maintenance experience with advanced climatological insight ensures that the landscapes he manages are not only beautiful today, but resilient and sustainable for years to come.</p>
+            </figcaption>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member-image">
+            <h2>phil dirt</h2>
+            <img src="img/house4.jpg" width="400" height="400" alt="Team Member">
+        <!-- Team Member 4 info -->
+         <figcaption class="vertical-text">
+                <!-- Employee Introduction -->
+                <h2>Introducing Phil Dirt: </h2>
+                 <!-- Job Title -->
+                <h3>Our Turf Health Specialist</h3>
+                <!-- Paragraph 1 -->
+                <p>Phil Dirt is a dedicated member of the GreenScape Solutions team, bringing over 8 years of specialized experience in maintaining the health and beauty of Central Ohio lawns. As our expert in lawn care and fertilization, Phil understands that a vibrant, emerald-green turf requires more than just regular mowing—it demands a scientifically tailored approach to nutrient management and pest control. He excels in designing comprehensive, seasonal fertilization programs that are specifically adapted to the unique soil types and grass varieties found in our region. Phil ensures that every lawn he manages receives the precise blend of nutrients required to promote deep root growth, dense blade coverage, and exceptional resilience against environmental stress.</p>
+                <!-- Paragraph 2 -->
+                <p>Phil also holds expertise in the responsible and effective use of chemical treatments. He is highly skilled in identifying and mitigating issues like invasive weeds, grubs, and lawn diseases, utilizing targeted, professional-grade applications to protect your investment while minimizing environmental impact. His methodical approach involves accurate diagnosis, carefully timed treatments, and detailed monitoring, guaranteeing maximum efficacy and safety. Whether your lawn needs a boost of specialized nutrients or a precise defensive strategy against pests, Phil Dirt provides the technical skill and proven dedication necessary to cultivate a lush, weed-free, and picture-perfect lawn.</p>
+            </figcaption>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="ftr">
+        <div class="footer-container">
+            <!-- Copyright -->
+            <div class="footer-column">
+                <p>2024 GreenScape LLC. All rights reserved</p>
+            </div>
+            <!-- Contact Information -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>
+                    <a class="footer-elements" href="mailto:info@greenscapes.com">
+                        info@greenscapes.com
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="tel:+1555123457">
+                        (555)123-4567
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="https://facebook.dacc-appdev.com/">
+                        Facebook
+                    </a>
+                </p>
+            </div>
+            <!-- Main Services -->
+            <div class="footer-column">
+                <h3>Main Offerings</h3>
+                <p>
+                    <a class="footer-elements" href="lawncare.html">
+                        Lawn Care
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="aeration-seeding.html">
+                        Aeration & Seeding
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="treatments.html">
+                        Treatments
+                    </a>
+                </p>
+            </div>
+            <!-- Extra Pages -->
+            <div class="footer-column">
+                <h3>Explore More</h3>
+                <p>
+                    <a class="footer-elements" href="team.html">
+                        Team
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="blog.html">
+                        Blog
+                    </a>
+                </p>
+                <p>
+                    <a class="footer-elements" href="contact-us.html">
+                        Contact Us
+                    </a>
+                </p>
+            </div>
+        </div>
     </footer>
-
+    <!-- JavaScript File -->
     <script src="./scripts/js/script.js"></script>
 </body>
 </html>
