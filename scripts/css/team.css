@@ -42,20 +42,32 @@ a{
 /* Container for the team members img */
 .team-member-image {
     display:block;
+    background-color: #b2fdb2ab;
     margin:20px auto;
     border: 0.5rem solid #7db395;
     border-radius: 1.3rem;;
     overflow: hidden;
     transition: transform 0.3s ease;
+    width: 80%;
 }
 
+.team-member-image img {
+    border: #235C32 solid 0.2rem;
+    border-radius: 1.3rem;
+}
 /* hover effect */
 .team-member-image:hover {
     transform: scale(1.05);
 }
 
-.vertical-text {
+.vertical-text{
     border: dashed 0.2rem #7db395;
+    background-color: #328671;
+}
+
+.vertical-text:hover
+{
+   transform: font-size(1.05rem);
 }
 
 
