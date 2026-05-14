@@ -44,7 +44,7 @@ Containers
 #mainIntroGroup1{
     /* Background */
     background: #d7ff96;
-    border: solid 0.23rem #1e472f;
+    border: solid 0.1rem #1e472f;
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
