@@ -39,23 +39,27 @@ a{
     text-align: center;
 }
 
-/* team member's image */
+/* Container for the team members img */
 .team-member-image {
-    display: inline-block;
-    border: #032e15 solid 0.5rem;
-    border-radius: 1.3rem;
-    text-align: center;
+    display:block;
+    margin:20px auto;
+    border: 0.5rem solid #7db395;
+    border-radius: 1.3rem;;
     overflow: hidden;
-}
-
-/* team member's image interaction */
-.team-member-image:hover {
-    rotate: 5deg;
-    transform: scale(1.05);
-    box-shadow: #032e15 0px 5px 15px;
     transition: transform 0.3s ease;
 }
 
+/* hover effect */
+.team-member-image:hover {
+    transform: scale(1.05);
+}
+
+.vertical-text {
+    border: dashed 0.2rem #7db395;
+}
+
+
+/* Button for team member actions */
 .team-button {
     background-color: #1f5030;
     border: none;
