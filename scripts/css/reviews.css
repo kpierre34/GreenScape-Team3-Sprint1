@@ -1,0 +1,78 @@
+
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 90px auto 40px auto; 
+            padding: 0 1rem;
+        }
+
+
+        .page-header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 1rem;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            color: #2b2d42;
+        }
+
+        /* Review Card Layout */
+        .review-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: #4a4e69;
+        }
+
+        .review-date {
+            color: #8d99ae;
+        }
+
+        .review-rating {
+            color: #ffb703; /* Gold-ish color for stars. Maybe cahnge this? */
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2b2d42;
+        }
+
+        .review-body {
+            color: #4a5568;
+        }
+
+ 
