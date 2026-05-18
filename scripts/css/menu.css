@@ -47,7 +47,7 @@ a{
 
 /* --- Left Side: Brand/Icon --- */
 .navbar-brand a {
-    color: #1f5030; /* Gold color for the brand name */
+    color: #95ffba; /* Gold color for the brand name */
     padding: 15px 0;
     display: block;
 }
@@ -217,7 +217,7 @@ table {
         max-height: 0; /* Initially hidden */
         overflow: hidden;
         transition: max-height 0.3s ease-out;
-        background-color: #333; 
+        background-color: #092213; 
         text-align: center;
         /* Position links below the brand/hamburger by setting width to 100% */
         order: 1; /* Force nav-links to the second row in the flex container */
@@ -240,7 +240,7 @@ table {
         max-height: 0;
         overflow: hidden;
         display: none; /* Hide by default, show with JS 'active' class */
-        background-color: #555;
+        background-color: #92ceb5;
         transition: max-height 0.3s ease;
     }
 
