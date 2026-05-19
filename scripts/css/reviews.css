@@ -13,6 +13,13 @@
             line-height: 1.6;
         }
 
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
         .container {
             max-width: 800px;
             margin: 90px auto 40px auto; 
@@ -75,4 +82,27 @@
             color: #4a5568;
         }
 
- 
+        .review-service{
+            font-weight: 300;
+            color: #4a4e69;
+            margin-left: -10rem;
+        }
+
+        .detailsExp{
+            /* Alignment */
+            margin: 1rem 0.5rem 0.4rem;
+            /* Text */
+            font-weight: 700;
+            /* Cursor */
+            cursor: pointer;
+            user-select: none;
+            -moz-user-select: none;
+        }
+        .detailsExp:hover{
+            /* Text */
+            color: #1fa36c;
+        }
+        .detailsExp:active{
+            /* Text */
+            color: #5ef1b4;
+        }

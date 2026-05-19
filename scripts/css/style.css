@@ -57,21 +57,6 @@ Containers
     gap: 5rem;
 }
 /* ========
-Footer
-======== */
-#ftrMainP{
-    /* Background */
-    background-color: #e7ebdf;
-    /* Spacing */
-    margin: 1rem;
-    gap: 5rem;
-}
-#ftrExplore{
-    /* Spacing */
-    margin: 1rem;
-    gap: 5rem;
-}
-/* ========
 Elements
 ======== */
 #logo{
